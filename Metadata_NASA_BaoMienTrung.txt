@@ -1,0 +1,32 @@
+SIÊU DỮ LIỆU (METADATA) - TẬP DỮ LIỆU KHÍ TƯỢNG MIỀN TRUNG VIỆT NAM
+
+1. THÔNG TIN CHUNG
+- Tên tập dữ liệu: POWER_Point_Daily_20050101_20251231_016d07N_108d22E_LST.csv
+- Tác giả thu thập: Nguyễn Thị Hoàng Anh (3120225007 - 25CNTT3)
+- Ngày trích xuất: Tháng 11/2026
+- Nguồn cấp dữ liệu gốc: NASA POWER (Prediction of Worldwide Energy Resources)
+- Giấy phép sử dụng: Mở (Open Data - NASA Public Domain)
+
+2. THÔNG TIN KHÔNG GIAN VÀ THỜI GIAN
+- Vị trí địa lý (Tọa độ): Vĩ độ (Latitude) 16.06°N, Kinh độ (Longitude) 108.22°E (Đà Nẵng, đại diện Trung Trung Bộ).
+- Độ cao so với mực nước biển: ~8.69 mét
+- Giai đoạn thời gian: Từ 01/01/2005 đến 31/12/2025
+- Độ phân giải thời gian: Hằng ngày (Daily)
+- Số lượng quan trắc (dòng): 7.670 dòng dữ liệu hợp lệ.
+
+3. CẤU TRÚC BIẾN SỐ (DATA DICTIONARY)
+- Dòng chứa tiêu đề cột (Header): Dòng số 13 trong file CSV gốc.
+- Ký hiệu giá trị lỗi/thiếu (Missing/Error value): -999.0
+
+| Tên Cột     | Mô tả chi tiết                                            | Đơn vị tính |
+|:------------|:----------------------------------------------------------|:------------|
+| YEAR        | Năm quan trắc                                             | YYYY        |
+| DOY         | Ngày thứ mấy trong năm (Day of Year)                      | 1 - 365/366 |
+| T2M_MAX     | Nhiệt độ cực đại hằng ngày đo ở độ cao 2 mét              | °C          |
+| T2M_MIN     | Nhiệt độ cực tiểu hằng ngày đo ở độ cao 2 mét             | °C          |
+| WS10M_MAX   | Sức gió cực đại hằng ngày đo ở độ cao 10 mét              | m/s         |
+| PRECTOTCORR | Lượng mưa tổng cộng hiệu chỉnh (đã chuẩn hóa bề mặt)      | mm/day      |
+
+4. QUY TRÌNH XỬ LÝ (DATA PROVENANCE)
+- Tập dữ liệu thô (raw) được giữ nguyên bản, không chỉnh sửa thủ công.
+- Các giá trị -999.0 được phát hiện và loại bỏ bằng mã nguồn Python để đảm bảo tính minh bạch.
